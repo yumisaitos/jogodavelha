@@ -1,0 +1,155 @@
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color:rgb(255, 246, 232);
+}
+
+h1{
+    font-size: 45px;
+    color: lightpink;
+}
+
+/*botoes*/
+
+#buttons-container{
+    margin-bottom: 20px;   
+}
+
+#buttons-container button {
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;  
+    margin: 0 5px;
+    background-color:rgb(219, 238, 245);
+    font-weight: bold;
+}
+
+/*jogo*/
+
+#container{
+    width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*centralizar uma div na tela*/
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box{
+    border: 5px solid #000;
+    height: 100px;
+    box-sizing: border-box;
+    flex: 1 1 33%; /*garantir as tres divs por liha*/
+}
+
+#block-1 {
+    border-top: none;
+    border-left: none;
+
+}
+
+#block-2 {
+    border-top: none;
+}
+
+#block-3 {
+    border-top: none;
+    border-right: none;
+    
+}
+
+#block-4 {
+    border-left: none; 
+    
+}
+
+#block-6 {
+    border-right: none;
+}
+
+#block-7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+#block-8 {
+    border-bottom: none;
+    
+}
+
+#block-9 {
+    border-bottom: none;
+    border-right: none;
+    
+}
+
+/*sombolos*/
+
+.x {
+    font-size: 75px;
+    color: lightcoral;
+    display: inline-block;
+}
+
+.o {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(199, 243, 199);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/*placar*/
+
+#scoreboard-container {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#x-scoreboard {
+    color: rgb(218, 104, 104);
+    margin-right: 3px;
+
+}
+
+#o-scoreboard {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(199, 243, 199);
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.score-box {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/*message p*/
+
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 215px;
+    left: 0;
+    right: 0;
+    width: 500px;
+    background-color: rgb(176, 255, 196);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px  ;
+}
+
+.hide{
+    display: none !important;
+}
